@@ -122,7 +122,7 @@ extension HTUpdatesViewController : UITableViewDataSource, UITableViewDelegate
         skullBackground.isHidden = scrollView.contentOffset.y > 0
         logoCenterToTopMargin.constant =  ((updatesTableView.contentInset.top + 64) / 2.0) - ((((updatesTableView.contentInset.top + 64) / 2.0) - 37) * percentage)
 
-        if percentage < -1.37 && !hiddenAnimation.isPlaying {
+        if percentage < -1.5 && !hiddenAnimation.isPlaying {
             hiddenAnimation.startPixelAnimation()
         }
 
